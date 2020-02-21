@@ -1,0 +1,112 @@
+
+.header {
+    grid-area: header;
+    background: lightpink;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 5px;
+    border: solid;
+
+  }
+  
+  .header:hover{
+    background: purple;
+  }
+
+  .myName {
+    margin-bottom: 0px;
+    font-family: 'Playball', cursive;
+  }
+
+  .myEmail {
+    margin-top: 0;
+    font-family: 'Fjalla One', sans-serif;
+    text-decoration: underline;
+  }
+
+
+
+  .main {
+    grid-area: main;
+    Background: beige;
+    color: brown;
+    font-size: 15px;
+    font-family:'Exo 2', sans-serif;
+    padding-left: 5px;
+    border: double;
+  }
+
+  .main2 {
+    grid-area: main2;
+    background: beige;
+    color: brown;
+    font-family:'Exo 2', sans-serif;
+    padding-left: 5px;
+    border: double;
+  }
+
+
+
+  .sidebar {
+    grid-area: sidebar;
+    background: beige;
+    color: brown;
+    font-family: 'Exo 2', sans-serif;
+    padding-left: 5px;
+    border: double;
+
+  }
+
+  .footer {
+    grid-area: footer;
+    background: beige;
+    color: brown;
+    border: double;
+    padding-left: 5px;
+    font-family: 'Exo 2', sans-serif;
+
+  }
+
+
+  .sidebar2 {
+    grid-area: sidebar2;
+    background: beige;
+    color: brown;
+    border: double;
+    padding-left: 5px;
+    font-family: 'Exo 2', sans-serif;
+  }
+
+
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+    display: grid;
+    /* grid-template-columns: 20px auto 0px; */
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 160px auto auto;
+    /* grid-template-rows: repeat(3, 400px); */
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+
+    grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "main2 main2 sidebar"
+    "sidebar2 footer footer"
+
+
+}
+
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
